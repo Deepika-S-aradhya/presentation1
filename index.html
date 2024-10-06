@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intent Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="presentation">
+        <div class="slide active" id="slide1">
+            <h1>Intent</h1>
+            <p><li>Intents are used to request actions from other app components,
+            such as launching activities, starting services, broadcasting messages,
+            and sharing data.</li>
+           <li> Android uses Intent for communicating between the components of an Application and also from one application to another application.</li>
+           <li>Intent are the objects which is used in android for passing the information among Activities in an Application
+           p to another also. </li>
+           <li>Intent are used for communicating between the Application components and it also provides the connectivity between two apps.</li></p>
+        </div>
+        <div class="slide" id="slide2">
+            <h2>Intent Classification</h2>
+            <p>Types of Intent:</p>
+            <ul>
+                <li>Explicit Intent</li>
+                <li>Implicit Intent</li>
+            </ul>
+        </div>
+        <div class="slide" id="slide3">
+            <h2>Explicit Intent</h2>
+            <p><li>An explicit intent is one that you use to launch a specific app component, such as a particular activity or service in your app.</li>
+           <li> Explicit Intents are used to connect the application internally.</li><li>In Explicit we use the name of component which will be affected by Intent.</li> </p>
+        </div>
+         <div class="slide" id="slide4">
+            <h2>Implicit Intent</h2>
+            <p><li>An implicit intent specifies an action that can invoke any app on the device able to perform the action.</li>
+            <li>In Implicit Intents we do need to specify the name of the component. We just specify the Action which has to be performed and further this action is handled by the component of another application.</li>
+            <li>The basic example of implicit Intent is to open any web page</li></p>
+        </div>
+        <div class="slide" id="slide5">
+            <p><h3>Intent Uses In Android:</h3>Android uses Intents for facilitating communication between its components like Activities, Services 
+            and Broadcast Receivers.
+            <h3>Intent for an Activity:</h3>Every screen in Android application represents an activity. To start a new activity you need to pass an
+            Intent object to startActivity() method. This Intent object helps to start a new activity and passing data to the second activity.
+            <h3>Intent for Services:</h3>Services work in background of an Android application and it does not require any user Interface.
+            Intents could be used to start a Service that performs one-time task or for starting a Service you need to pass Intent to startService() method.</p>
+        </div>
+        <div class="navigation">
+            <button id="prevBtn">Previous</button>
+            <button id="nextBtn">Next</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
